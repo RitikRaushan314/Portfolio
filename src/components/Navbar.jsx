@@ -8,7 +8,7 @@ const navItems = [
   { label: 'Projects', href: '#projects' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'Education', href: '#education' },
-  { label: 'Achievements', href: '#achievements' },
+  // { label: 'Achievements', href: '#achievements' },
 ];
 
 export default function Navbar() {
