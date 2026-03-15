@@ -8,7 +8,7 @@ const projects = [
     title: 'Crash Reporting Data Analysis',
     description:
       'Performed exploratory data analysis on crash reporting datasets to identify accident patterns, contributing factors, and risk indicators. Used data cleaning, statistical analysis, and visualization to highlight trends and insights.',
-    tech: ['Python', 'Pandas', 'Matplotlib', 'EDA'],
+    tech: ['Excel', 'Data Visualization', 'Dashboard'],
     github: 'https://github.com/RitikRaushan314/Crash-Reporting-Data-Analysis',
     sparkData: [20, 45, 35, 60, 50, 75, 65, 80, 70, 90, 85, 95],
   },
@@ -16,7 +16,7 @@ const projects = [
     title: 'Car Accident Analysis Dashboard',
     description:
       'Developed an interactive accident analysis dashboard using Excel to identify high-risk areas, peak accident times, and severity trends through charts, pivot tables, and slicers.',
-    tech: ['Excel', 'Pivot Tables', 'Data Visualization', 'Dashboard'],
+    tech: ['Power BI', 'Visualization', 'Dashboard'],
     github:
       'https://github.com/RitikRaushan314/Car-Accident-Analysis-Dashboard',
     sparkData: [30, 25, 50, 40, 65, 55, 70, 80, 60, 85, 90, 78],
