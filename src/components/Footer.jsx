@@ -72,8 +72,8 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            Designed & Built with ❤️ by{' '}
-            <a href="#hero">Ritik Raushan</a>
+            Made with ❤️ by{' '}
+            <a href="#hero">Ritik</a>
           </p>
           <p className="footer-copy">© 2026 Ritik Raushan | Data Analyst Portfolio</p>
         </div>

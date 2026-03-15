@@ -348,6 +348,55 @@
   z-index: 1;
 }
 
+/* Floating data badges */
+.hero-data-floats {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.data-float-badge {
+  position: absolute;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  opacity: 0;
+  padding: 6px 12px;
+  background: rgba(20, 184, 166, 0.06);
+  border: 1px solid rgba(20, 184, 166, 0.12);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(4px);
+  animation: floatBadge 8s ease-in-out infinite;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+@keyframes floatBadge {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  15% {
+    opacity: 0.5;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: translateY(-15px) scale(1);
+  }
+  85% {
+    opacity: 0.5;
+    transform: translateY(-5px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+}
+
 /* Scroll indicator */
 .hero-scroll-indicator {
   position: absolute;

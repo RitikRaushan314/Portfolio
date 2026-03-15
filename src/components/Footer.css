@@ -1,10 +1,14 @@
 .footer {
-  background: var(--bg-secondary);
+  background:
+    radial-gradient(circle, rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+    var(--bg-secondary);
+  background-size: 24px 24px;
   border-top: 1px solid var(--border-card);
   padding: 60px 0 32px;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
 
 .footer.revealed {

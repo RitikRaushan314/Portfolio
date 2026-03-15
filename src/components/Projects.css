@@ -73,16 +73,66 @@
   box-shadow: 0 20px 60px rgba(20, 184, 166, 0.12);
 }
 
+/* Header with number + sparkline */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
 .project-number {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 16px;
   opacity: 0.7;
-  position: relative;
-  z-index: 1;
+}
+
+/* Sparkline */
+.sparkline-wrap {
+  width: 100px;
+  height: 32px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .sparkline-wrap {
+  opacity: 1;
+}
+
+.sparkline-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.sparkline-line {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  transition: stroke-dashoffset 0s;
+}
+
+.project-card.revealed .sparkline-line {
+  animation: drawSparkline 2s ease forwards;
+}
+
+.sparkline-area {
+  opacity: 0;
+}
+
+.project-card.revealed .sparkline-area {
+  animation: fadeInArea 1s 1.2s ease forwards;
+}
+
+@keyframes drawSparkline {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fadeInArea {
+  to { opacity: 1; }
 }
 
 .project-title {
