@@ -59,7 +59,7 @@ export default function Hero() {
             <div className="hero-photo-glow" />
             <img
               className="hero-photo"
-              src="/profile.png"
+              src="/profile.jpeg"
               alt="Ritik Raushan"
               loading="eager"
             />
