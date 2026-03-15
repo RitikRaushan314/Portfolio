@@ -10,17 +10,6 @@ import './Hero.css';
 
 const roles = ['Data Analyst', 'Python Developer', 'Data Visualizer'];
 
-const dataFloats = [
-  { text: 'R² = 0.97', top: '15%', left: '5%', delay: '0s' },
-  { text: 'n = 1024', top: '25%', right: '8%', delay: '2s' },
-  { text: 'p < 0.05', bottom: '30%', left: '3%', delay: '4s' },
-  { text: 'σ = 2.41', top: '60%', right: '5%', delay: '1s' },
-  { text: 'df = 4', top: '45%', left: '8%', delay: '3s' },
-  { text: 'μ = 42.7', bottom: '20%', right: '12%', delay: '5s' },
-  { text: 'β₁ = 0.73', top: '10%', right: '25%', delay: '2.5s' },
-  { text: 'Σ(xᵢ)', bottom: '40%', left: '12%', delay: '1.5s' },
-];
-
 function useTypingEffect(strings, typingSpeed = 80, deletingSpeed = 50, pauseTime = 2000) {
   const [text, setText] = useState('');
   const [stringIndex, setStringIndex] = useState(0);
@@ -63,25 +52,6 @@ export default function Hero() {
   return (
     <section className="hero section" id="hero">
       <Particles />
-
-      {/* Floating data badges */}
-      <div className="hero-data-floats">
-        {dataFloats.map((item) => (
-          <span
-            className="data-float-badge"
-            key={item.text}
-            style={{
-              top: item.top,
-              bottom: item.bottom,
-              left: item.left,
-              right: item.right,
-              animationDelay: item.delay,
-            }}
-          >
-            {item.text}
-          </span>
-        ))}
-      </div>
 
       <div className={`container hero-inner${loaded ? ' hero-loaded' : ''}`}>
         <div className="hero-photo-wrapper">

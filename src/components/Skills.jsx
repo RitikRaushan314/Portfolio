@@ -29,11 +29,6 @@ const skillCategories = [
     icon: <HiOutlineCog />,
     skills: ['GitHub', 'HTML', 'CSS'],
   },
-  {
-    title: 'Soft Skills',
-    icon: <HiOutlineLightBulb />,
-    skills: ['Problem Solving', 'Discipline', 'Active Listening', 'Hardworking'],
-  },
 ];
 
 export default function Skills() {
