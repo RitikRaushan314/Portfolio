@@ -5,7 +5,7 @@ const certifications = [
   {
     title: 'Basics of DSA',
     org: 'Lovely Professional University',
-    year: '2024',
+    year: '2025',
     image: '/SUMMER TRAINING CERTIFICATE_page-0001.jpg',
   },
   {
