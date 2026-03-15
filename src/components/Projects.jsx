@@ -16,7 +16,7 @@ const projects = [
     title: 'Car Accident Analysis Dashboard',
     description:
       'Developed an interactive accident analysis dashboard using Excel to identify high-risk areas, peak accident times, and severity trends through charts, pivot tables, and slicers.',
-    tech: ['Power BI', 'Visualization', 'Dashboard'],
+    tech: ['Power BI', 'Data Visualization', 'Dashboard'],
     github:
       'https://github.com/RitikRaushan314/Car-Accident-Analysis-Dashboard',
     sparkData: [30, 25, 50, 40, 65, 55, 70, 80, 60, 85, 90, 78],
