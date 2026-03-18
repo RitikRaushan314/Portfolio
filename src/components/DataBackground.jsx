@@ -8,6 +8,12 @@ const FORMULAS = [
   'λ = 2.5', 'Var(X)', 'E[X]', 'log(L)', 'ΔR² = 0.12',
 ];
 
+// Return accent RGBA string based on current theme
+function getAccentRgb() {
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  return isDark ? '20, 184, 166' : '13, 148, 136';
+}
+
 class FloatingFormula {
   constructor(canvas) {
     this.canvas = canvas;
@@ -49,7 +55,7 @@ class FloatingFormula {
 
   draw(ctx) {
     ctx.font = `${this.size}px 'Courier New', monospace`;
-    ctx.fillStyle = `rgba(20, 184, 166, ${Math.max(0, this.opacity)})`;
+    ctx.fillStyle = `rgba(${getAccentRgb()}, ${Math.max(0, this.opacity)})`;
     ctx.fillText(this.text, this.x, this.y);
   }
 }
@@ -96,8 +102,9 @@ class MiniChart {
 
   draw(ctx) {
     const alpha = Math.max(0, this.opacity);
-    ctx.strokeStyle = `rgba(20, 184, 166, ${alpha})`;
-    ctx.fillStyle = `rgba(20, 184, 166, ${alpha * 0.6})`;
+    const rgb = getAccentRgb();
+    ctx.strokeStyle = `rgba(${rgb}, ${alpha})`;
+    ctx.fillStyle = `rgba(${rgb}, ${alpha * 0.6})`;
     ctx.lineWidth = 1;
 
     if (this.type === 0) {
@@ -185,7 +192,7 @@ export default function DataBackground() {
 
     // Draw faint grid
     const drawGrid = () => {
-      ctx.strokeStyle = 'rgba(20, 184, 166, 0.015)';
+      ctx.strokeStyle = `rgba(${getAccentRgb()}, 0.015)`;
       ctx.lineWidth = 0.5;
 
       const spacing = 80;

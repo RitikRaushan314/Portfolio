@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import { HiSun, HiMoon } from 'react-icons/hi2';
+import { useTheme } from '../context/ThemeContext';
 import './Navbar.css';
 
 const navItems = [
@@ -15,6 +17,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +57,21 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
+
+          {/* Theme toggle — sits right after Education */}
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          >
+            <span className={`theme-icon ${theme === 'dark' ? 'active' : ''}`}>
+              <HiMoon />
+            </span>
+            <span className={`theme-icon ${theme === 'light' ? 'active' : ''}`}>
+              <HiSun />
+            </span>
+          </button>
         </div>
 
         <button

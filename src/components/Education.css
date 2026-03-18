@@ -70,7 +70,7 @@
 }
 
 .edu-card {
-  background: rgba(26, 34, 54, 0.5);
+  background: var(--bg-card);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
@@ -78,6 +78,7 @@
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .edu-card::before {

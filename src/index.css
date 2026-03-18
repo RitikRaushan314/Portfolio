@@ -1,5 +1,6 @@
 /* ===== CSS RESET & CUSTOM PROPERTIES ===== */
 :root {
+  /* Dark Mode (default) */
   --bg-primary: #0a0f1c;
   --bg-secondary: #111827;
   --bg-card: #1a2236;
@@ -40,6 +41,32 @@
   --section-padding: 100px 0;
 }
 
+/* ===== LIGHT MODE VARIABLES ===== */
+[data-theme="light"] {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #e2e8f0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --border-card: #cbd5e1;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --accent: #0d9488;
+  --accent-light: #14b8a6;
+  --accent-dark: #0f766e;
+  --accent-glow: rgba(13, 148, 136, 0.12);
+  --accent-glow-strong: rgba(13, 148, 136, 0.25);
+
+  --gradient-bg: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%);
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 8px 32px rgba(15, 23, 42, 0.16);
+  --shadow-accent: 0 4px 24px rgba(13, 148, 136, 0.18);
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -59,6 +86,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 a {

@@ -99,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(26, 34, 54, 0.6);
+  background: var(--bg-card);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-sm);
