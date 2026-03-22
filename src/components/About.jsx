@@ -19,7 +19,7 @@ const highlights = [
     icon: <HiOutlineLightningBolt />
   },
   {
-    title: 'Clean Handing',
+    title: 'Data Handling',
     desc: 'Structured analysis and efficient querying.',
     icon: <HiOutlineDatabase />
   },
