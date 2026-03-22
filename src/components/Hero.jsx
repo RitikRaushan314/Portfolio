@@ -59,7 +59,7 @@ export default function Hero() {
             <div className="hero-photo-glow" />
             <img
               className="hero-photo"
-              src="/profile.jpeg"
+              src="/ritik.png"
               alt="Ritik Raushan"
               loading="eager"
             />
@@ -79,10 +79,7 @@ export default function Hero() {
             <span className="typed-cursor">|</span>
           </p>
           <p className="hero-overview">
-            A motivated Computer Science student passionate about data analysis,
-            visualization, and extracting insights from real-world datasets.
-            Skilled in Python, SQL, Excel, and Power BI with experience building
-            analytical dashboards and performing data-driven problem solving.
+            Computer Science student focused on data analysis and visualization, turning real-world data into actionable insights using Python, SQL, Excel, and Power BI.
           </p>
 
           <div className="hero-contact-row">
