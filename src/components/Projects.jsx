@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Car Accident Analysis Dashboard',
     description:
-      'Developed an interactive accident analysis dashboard using Excel to identify high-risk areas, peak accident times, and severity trends through charts, pivot tables, and slicers.',
+      'Developed an interactive accident analysis dashboard using PowerBI to identify high-risk areas, peak accident times, and severity trends through charts, pivot tables, and slicers.',
     tech: ['Power BI', 'Data Visualization', 'Dashboard'],
     github:
       'https://github.com/RitikRaushan314/Car-Accident-Analysis-Dashboard',
